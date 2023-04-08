@@ -1,0 +1,24 @@
+{
+  "name": "stock-viz-ml-app",
+  "version": "1.0.0",
+  "description": "visualize financial data and apply ml algorithms for analysis",
+  "main": "index.js",
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Okibaba/stock-viz-ml-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Okibaba/stock-viz-ml-app/issues"
+  },
+  "homepage": "https://github.com/Okibaba/stock-viz-ml-app#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
