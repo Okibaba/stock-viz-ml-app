@@ -45,7 +45,7 @@ const Footer = () => {
                         <a
                             role='button'
                             className='btn btn-link'
-                            href='tel:+12065551234'
+                            href='tel:+1234-567-89'
                         >
                             <i className='fa fa-phone' /> 1-206-555-1234
                         </a>
@@ -55,13 +55,16 @@ const Footer = () => {
                             className='btn btn-link'
                             href='mailto:notreal@notreal.co'
                         >
-                            <i className='fa fa-envelope-o' /> campsites@nucamp.co
+                            <i className='fa fa-envelope-o' /> services@stockvizapp.com
                         </a>
                     </Col>
                 </Row>
             </Container>
+           
         </footer>
+        
     );
+ 
 };
 
 export default Footer;
