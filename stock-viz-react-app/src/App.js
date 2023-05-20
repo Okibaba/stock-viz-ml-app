@@ -8,6 +8,7 @@ import plotData from './app/plotData';
 import PlotComponent from './components/PlotComponent';
 import tableData from './app/tableData';
 import DataTableComponent from './components/DataTableComponent';
+import ValueCard from './components/ValueCard';
 
 
 function App() {
