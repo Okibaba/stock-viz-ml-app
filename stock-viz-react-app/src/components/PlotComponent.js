@@ -11,11 +11,11 @@ const PlotComponent = ({ plotData }) => {
                 y: data.y,
                 type: 'scatter',
                 mode: 'lines+points',
-                marker: {color: 'red'},
+                marker: {color: 'green'},
             }))}
             layout={ {
-                width: 720, 
-                height: 440, 
+                width: 1000, 
+                height: 1000, 
                 title: 'A Fancy Plot',
                 xaxis: {
                     rangeselector: {
