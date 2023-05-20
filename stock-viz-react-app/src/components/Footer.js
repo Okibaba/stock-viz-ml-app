@@ -7,7 +7,7 @@ const Footer = () => {
             <Container>
                 <Row>
                     <Col xs={{ size: 4, offset: 1 }} sm='2'>
-                        <h5>Links</h5>
+                        <h5>About</h5>
                         <ul className='list-unstyled'>
 
                             {/* //add links */}
