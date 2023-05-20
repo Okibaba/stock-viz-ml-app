@@ -16,7 +16,7 @@ const PlotComponent = ({ plotData }) => {
             layout={ {
                 width: 1000, 
                 height: 1000, 
-                title: 'A Fancy Plot',
+                title: 'Apple Stock Returns',
                 xaxis: {
                     rangeselector: {
                         buttons: [
