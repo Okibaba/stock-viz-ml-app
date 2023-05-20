@@ -55,7 +55,7 @@ const Footer = () => {
                             className='btn btn-link'
                             href='mailto:notreal@notreal.co'
                         >
-                            <i className='fa fa-envelope-o' /> services@stockvizapp.com
+                            <i className='fa fa-envelope-o' /> services@StockVizMLApp.com
                         </a>
                     </Col>
                 </Row>
