@@ -11,9 +11,12 @@ import DataTableComponent from './components/DataTableComponent';
 
 
 function App() {
+  console.log(tableData)
+  console.log(plotData)
 
   return (
     <div className="App">
+      
       <Header />
       <PlotComponent plotData={plotData} />
       <DataTableComponent data={tableData} />
