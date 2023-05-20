@@ -16,12 +16,15 @@ const PlotComponent = ({ plotData }) => {
             layout={ {
                 width: 720, 
                 height: 440, 
-                title: 'Apple stock data',
+                title: 'A Fancy Plot',
                 xaxis: {
                     rangeselector: {
                         buttons: [
                             {count: 1, label: '1d', step: 'day', stepmode: 'backward'},
                             {count: 7, label: '1w', step: 'day', stepmode: 'backward'},
+                            {count: 1, label: '1m', step: 'month', stepmode: 'backward'},
+                            {count: 6, label: '6m', step: 'month', stepmode: 'backward'},
+                            {count: 1, label: '1y', step: 'year', stepmode: 'backward'},
                             {step: 'all'}
                         ]
                     },
