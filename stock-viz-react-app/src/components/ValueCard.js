@@ -1,23 +1,25 @@
 import React from 'react';
-import { Card, CardBody, CardText } from 'reactstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons'
+import { Card, CardBody, CardText, Col } from 'reactstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
-const ValueCard = ({ value }) => {
-  const isPositive = value >= 0;
+const ValueCard = ({ word, number }) => {
+  const isPositive = number >= 0;
 
   return (
-    <Card>
-      <CardBody>
-        <CardText>
-          {value}{' '}
-          <FontAwesomeIcon 
-            icon={isPositive ? faArrowUp : faArrowDown} 
-            style={{ color: isPositive ? 'green' : 'red' }} 
-          />
-        </CardText>
-      </CardBody>
-    </Card>
+    <Col md={1} className="d-flex justify-content-center">
+      <Card style={{ width: '100rem', height: '7rem' }}>
+        <CardBody className='d-flex flex-column justify-content-center align-items-center'>
+          <CardText>
+            {word} {number}{' '}
+            <FontAwesomeIcon 
+              icon={isPositive ? faArrowUp : faArrowDown} 
+              style={{ color: isPositive ? 'green' : 'red' }} 
+            />
+          </CardText>
+        </CardBody>
+      </Card>
+    </Col>
   );
 };
 

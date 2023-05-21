@@ -35,4 +35,8 @@ function generateSyntheticData() {
 
 const plotData = generateSyntheticData();
 
+
+
 export default plotData;
+
+

@@ -7,8 +7,8 @@ import Footer from './components/Footer';
 import plotData from './app/plotData';
 import PlotComponent from './components/PlotComponent';
 import tableData from './app/tableData';
-import DataTableComponent from './components/DataTableComponent';
-import ValueCard from './components/ValueCard';
+import ValueCardSubPage from './pages/ValueCardSubPage';
+import PlotComponentSubPage from './pages/PlotComponentSubPage';
 
 
 function App() {
@@ -19,8 +19,11 @@ function App() {
     <div className="App">
       
       <Header />
-      <PlotComponent plotData={plotData} />
-      <DataTableComponent data={tableData} />
+
+      <ValueCardSubPage/>      
+      <PlotComponentSubPage/>
+      
+      {/* <DataTableComponent data={tableData} /> */}
       <Footer />      
     </div>
   );
