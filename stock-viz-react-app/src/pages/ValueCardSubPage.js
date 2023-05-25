@@ -4,7 +4,7 @@ import ValueCard from '../components/ValueCard';
 
 const ValueCardSubPage = () => {
   return (
-    <Container className='d-flex justify-content-center'>
+    <Container className='d-flex justify-content-right'>
     <Row>
       <ValueCard word="S&P" number={15} />
       <ValueCard word="NASDAQ" number={-5} />
