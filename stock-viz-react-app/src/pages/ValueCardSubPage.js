@@ -9,9 +9,8 @@ const ValueCardSubPage = () => {
       <ValueCard word="S&P" number={15} />
       <ValueCard word="NASDAQ" number={-5} />
       <ValueCard word="DJIA" number={20} />
-      <ValueCard word="S&P" number={15} />
-      <ValueCard word="NASDAQ" number={-5} />
-      <ValueCard word="DJIA" number={20} />
+          
+      
     </Row>
     </Container>
   );

@@ -4,7 +4,7 @@ import React from 'react';
 import Plot from 'react-plotly.js';
 
 
-const PlotComponent = ({ plotData }) => {
+const PlotComponent = ({ plotTitle, plotData }) => {
     return (
         <Plot
             data={plotData.map(data => ({
@@ -17,7 +17,7 @@ const PlotComponent = ({ plotData }) => {
             layout={ {
                 width: 1000, 
                 height: 1000, 
-                title: 'Apple Stock Returns',
+                title: plotTitle,
                 xaxis: {
                     rangeselector: {
                         buttons: [
