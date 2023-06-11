@@ -48,6 +48,7 @@ h2 {
 }
 
 .navbar-dark {
+  width: 100%;
   background-color: #901cad;
   background-image: linear-gradient(to right, #080708, #07080c, #080808);
   margin-bottom: 2rem;
@@ -77,4 +78,13 @@ h2 {
 
 .value-card {
   border-radius: 15px;
+}
+
+
+.margin-bottom {
+  margin-bottom: 15px; /* adjust value as needed */
+}
+
+.full-width-navbar {
+  width: 100%;
 }

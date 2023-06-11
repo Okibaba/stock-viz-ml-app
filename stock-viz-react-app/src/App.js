@@ -9,6 +9,7 @@ import PlotComponent from './components/PlotComponent';
 import tableData from './app/tableData';
 import ValueCardSubPage from './pages/ValueCardSubPage';
 import PlotComponentSubPage from './pages/PlotComponentSubPage';
+import SearchBox from './components/SearchBox';
 
 
 function App() {
@@ -19,9 +20,10 @@ function App() {
     <div className="App">
       
       <Header />
-
+      <SearchBox/>
       <ValueCardSubPage/>      
       <PlotComponentSubPage/>
+      
       
       {/* <DataTableComponent data={tableData} /> */}
       <Footer />      

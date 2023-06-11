@@ -8,7 +8,8 @@ const ValueCard = ({ word, number }) => {
   const cardStyle = {
     backgroundColor: number >= 0 ? 'lightgreen' : 'salmon',
     borderRadius: '15px',
-    width: '100rem', height: '7rem',
+    width: '200rem',
+    height: '15rem',    
   };
 
   const isPositive = number >= 0;
