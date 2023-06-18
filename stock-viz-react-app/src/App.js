@@ -1,4 +1,7 @@
+import {useEffect, useState } from 'react';
+import {useDispatch} from 'react-redux';
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
@@ -10,24 +13,31 @@ import tableData from './app/tableData';
 import ValueCardSubPage from './pages/ValueCardSubPage';
 import PlotComponentSubPage from './pages/PlotComponentSubPage';
 import SearchBox from './components/SearchBox';
-
+import Search from './components/Search';
+import StockPlot from './components/StockPlot';
 
 function App() {
   console.log(tableData)
   console.log(plotData)
+  const [symbol, setSymbol] = useState('IBM');  // default symbol
+
+  const dispatch = useDispatch();
+
+  
 
   return (
+    
     <div className="App">
       
       <Header />
-      <SearchBox/>
-      <ValueCardSubPage/>      
-      <PlotComponentSubPage/>
+      <Search setSymbol={setSymbol} />
+      <ValueCardSubPage/>
       
-      
-      {/* <DataTableComponent data={tableData} /> */}
+      <StockPlot symbol={symbol} />    
+      {/* <PlotComponentSubPage/>       */}
       <Footer />      
     </div>
+    
   );
 }
 
